@@ -37,7 +37,7 @@ module.exports.editproduct = (req,res) =>{
     res.json({message:"Product edited sucessfully", product: editedProduct})
   })
   .catch((error)=> {
-    console.log(`Error editing product ${err}`)
+    console.log(`Error editing product ${error}`)
     res.json(error)
   })
 }
